@@ -71,7 +71,7 @@ end
 
  def player_stats(name) 
     game_hash.each do |home_or_away, team_info|  
-    team_info[:players].each do |player|  
+    team_info[:players].map do |player|  
     if name == player[:player_name]
     player.shift
     player
