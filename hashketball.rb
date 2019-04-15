@@ -74,6 +74,7 @@ end
     team_info[:players].each do |player|  
     if name == player[:player_name]
     player.shift
+    player
 end    
  end  
  end
