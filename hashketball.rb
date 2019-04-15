@@ -74,7 +74,7 @@ end
     team_info[:players].map do |player|  
     if player[:player_name] == name
     player.shift
-    player
+    return player
 end    
  end  
  end
